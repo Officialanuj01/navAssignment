@@ -1,51 +1,77 @@
-
-  body {
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-  }
-  
-  
-  nav {
+}
+
+nav {
     background-color: #333;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
-  }
-  
-  nav img {
+}
+
+nav img {
     height: 30px;
     width: 30px;
     margin-right: 10px;
-  }
-  
-  
-  nav .anchor {
+}
+
+nav .anchor {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-  }
-  
-  
-  
-  
-  #form {
-    margin-top: 10px;
-  }
-  
-  #form input[type="text"] {
+    position: relative;
+    top: 20px;
+    left: 300px;
+}
+
+#form {
+    margin-top: 0px;
+}
+
+#form input[type="text"] {
     width: 200px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
+    position: relative;
+    top: 0px;
+    left: 800px;
+}
 
-  nav img:hover{
-    scale: 1.2;
-  }
+nav #logo,
+nav #location {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+nav #logo{
+    position: relative;
+    top: 30px;
 
-  
-  
+}
+nav #location {
+    margin-left: 20px;
+    position: relative;
+    top: 30px;
+}
 
-  
+
+nav #customer,
+nav #cart {
+    position: relative;
+    top: 0px;
+    right: 100px;
+}
+
+nav .anchor {
+    margin: 0 10px;
+}
+
+nav #form {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+nav img:hover {
+    transform: scale(1.2);
+}
